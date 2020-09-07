@@ -15,20 +15,38 @@ namespace FileUploader.Controllers
     {
         // GET api/values
         [HttpGet]
-public async Task<FileStreamResult>Download()
+public async Task<IActionResult> Download()
 {
     var path = "SavedFiles/house.FBX";
-    FileStream uploadFileStream = System.IO.File.OpenRead(path) ;
-    return new FileStreamResult(uploadFileStream, "application/octet-stream");
+    FileStream uploadFileStream = System.IO.File.OpenRead(path);
+    // return new FileStreamResult(uploadFileStream, "application/octet-stream");
+    return File(uploadFileStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+
 }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+       public async Task<IActionResult> Download(int id)
+{
+    var path = "SavedFiles/house.FBX";
+    if (id==1){
+         path = "SavedFiles/fbx1.fbx";
+    }
+    if(id==2){
+          path = "SavedFiles/fbx2.fbx";
+    }
+    if(id==3){
+          path = "SavedFiles/fbx3.fbx";
+    }
+    else{
+        
+          path = "SavedFiles/house.FBX";
+    }
+    FileStream uploadFileStream = System.IO.File.OpenRead(path);
+    // return new FileStreamResult(uploadFileStream, "application/octet-stream");
+    return File(uploadFileStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 
+}
 
         
 

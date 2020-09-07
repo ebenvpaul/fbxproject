@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ebenvarghesepaul/Downloads/test/FileUploading/FileUploader/FileUploader.csproj": {}
+  },
+  "projects": {
+    "/Users/ebenvarghesepaul/Downloads/test/FileUploading/FileUploader/FileUploader.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ebenvarghesepaul/Downloads/test/FileUploading/FileUploader/FileUploader.csproj",
+        "projectName": "FileUploader",
+        "projectPath": "/Users/ebenvarghesepaul/Downloads/test/FileUploading/FileUploader/FileUploader.csproj",
+        "packagesPath": "/Users/ebenvarghesepaul/.nuget/packages/",
+        "outputPath": "/Users/ebenvarghesepaul/Downloads/test/FileUploading/FileUploader/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/ebenvarghesepaul/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.4, )"
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Encoding": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "System.Web.Http.Common": {
+              "target": "Package",
+              "version": "[4.0.20126.16343, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
